@@ -19,7 +19,7 @@
 #### 第2步 添加依赖关系
     
         dependencies {
-        	   implementation 'com.github.SHPDZY:AutoSearchBug:1.0.0'
+        	   implementation 'com.github.SHPDZY:AutoSearchBug:1.0.1'
         }
         	
         	
