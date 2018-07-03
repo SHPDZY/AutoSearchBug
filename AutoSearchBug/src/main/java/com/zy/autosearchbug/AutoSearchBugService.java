@@ -14,7 +14,7 @@ import org.json.JSONObject;
  * Created by zy on 2018/7/2.
  */
 
-public class DoHandleService extends Service implements AutoSearchBugGlobal {
+public class AutoSearchBugService extends Service implements AutoSearchBugGlobal {
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -32,10 +32,10 @@ public class DoHandleService extends Service implements AutoSearchBugGlobal {
     }
 
     private void search(final String errorMsg, int maxSize, final int showAnswer, int searchType) {
-        HttpUtil.doGet(API.SEARCH_URL + API.PAGESIZE + maxSize +
-                        API.ErrorMsg + errorMsg.replace(" ", "%20") +
-                        API.ShowAnswer + showAnswer + API.SearchType + searchType,
-                new HttpUtil.HResponse() {
+        AutoSearchBugHttpUtil.doGet(AutoSearchBugAPI.SEARCH_URL + AutoSearchBugAPI.PAGE_SIZE + maxSize +
+                        AutoSearchBugAPI.ERROR_MSG + errorMsg.replace(" ", "%20") +
+                        AutoSearchBugAPI.SHOW_ANSWER + showAnswer + AutoSearchBugAPI.SEARCH_TYPE + searchType,
+                new AutoSearchBugHttpUtil.HResponse() {
                     @Override
                     public void onStart() {
                         StringBuffer log = new StringBuffer();

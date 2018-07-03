@@ -1,11 +1,7 @@
 package com.zy.autosearchbug;
 
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
-
-import java.lang.reflect.Method;
 
 
 /**
@@ -53,7 +49,7 @@ import java.lang.reflect.Method;
     Thread.UncaughtExceptionHandler handler = new Thread.UncaughtExceptionHandler() {
         public void uncaughtException(final Thread thread, final Throwable ex) {
             String errorMsg = getErrorMsg(ex);
-            Intent intent = new Intent(mApp, DoHandleService.class);
+            Intent intent = new Intent(mApp, AutoSearchBugService.class);
             intent.putExtra(ERROR_MSG, errorMsg);
             intent.putExtra(MAX_SIZE, maxSize);
             intent.putExtra(SHOW_ANSWER, showAnswer);

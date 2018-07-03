@@ -3,7 +3,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application  android:supportsRtl="true">
-        <service android:process=":AutoDeBug"  android:name="com.zy.autosearchbug.DoHandleService" />
+        <service android:process=":AutoDeBug"  android:name="com.zy.autosearchbug.AutoSearchBugService" />
 
     </application>
 

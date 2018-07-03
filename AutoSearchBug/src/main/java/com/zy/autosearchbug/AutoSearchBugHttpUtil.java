@@ -10,7 +10,7 @@ import java.net.URL;
  * Created by zy on 2018/7/2.
  */
 
- class HttpUtil {
+ class AutoSearchBugHttpUtil {
 
     public interface HResponse {
         void onStart();
