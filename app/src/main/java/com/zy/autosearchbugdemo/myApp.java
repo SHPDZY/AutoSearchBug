@@ -15,7 +15,9 @@ public class myApp extends Application {
     public void onCreate() {
         super.onCreate();
         AutoSearchBugControl.getBuilder()
+                .setMaxSize(3)
                 .showAnswer(true)
+                .setSearchType(0)
                 .init();
     }
 }
