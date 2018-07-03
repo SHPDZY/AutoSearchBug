@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zy.autosearchbug">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application  android:supportsRtl="true">
+        <service android:process=":AutoDeBug"  android:name="com.zy.autosearchbug.DoHandleService" />
+
+    </application>
+
+</manifest>
