@@ -2,10 +2,6 @@
 > 这是一款可以在项目崩溃时获取异常  
 自动联网在Stack Overflow,百度或其他平台上寻找回答链接和详情
 
-[![AutoSearchBug](https://github.com/SHPDZY/AutoSearchBug)][AutoSearchBug] 
-[![api+svg][api+svg]][api+svg] 
-[![sizesvg][sizesvg]][sizesvg] 
-
 ## 如何引入
 
 ### Android Studio 引入
@@ -44,7 +40,11 @@
                 .init();
 
 ## 效果图
+默认初始化未显示回答详情
+![效果图](http://blog.9aiplay.com/zb_users/upload/2018/07/20180703150844153060172493277.png)
 
+
+自定义初始化显示详情
 ![效果图](http://blog.9aiplay.com/zb_users/upload/2018/07/20180703145628153060098854731.png)
 
 
